@@ -97,7 +97,7 @@ $('.card').click(function () {
 
   openCards.push($(this)); //Push current clicked card to the openCards array
   openCards[0].css('pointer-events', 'none'); //the clicked card will not longer be clickable
-  $('.moves-count').html('Moves: ' + moves); //append updated number of moves to the modal
+  $('.moves-count').html('Moves: <b>' + moves + '</b>'); //append updated number of moves to the modal
 
   if (openCards.length === 2) { //if there are 2 opened cards in openCards array, execute compareCards in 500ms
     setTimeout(function () {
@@ -138,9 +138,11 @@ function myTimer() {  //timer function
       secs = tick % 60; //secs will increment up to 59 and then reset back to 0
 
       if (secs < 10) {  //adding 0's (styling purposes)
-        timerDisplay = '0' + mins + ':0' + secs;
+        timerDisplay = "";
+        timerDisplay += '0' + mins + ':0' + secs;
       } else if (mins < 10) {
-        timerDisplay = '0' + mins + ':' + secs;
+        timerDisplay = "";
+        timerDisplay += '0' + mins + ':' + secs;
       }
 
       $('.output').html(timerDisplay); //update timer while game is running every second
@@ -150,6 +152,7 @@ function myTimer() {  //timer function
       if ($('.match').length === 16) {
         start = false;
         $('.modal').css('display', 'block');
+        $('.time').html('Timer: <b>' + timerDisplay + '</b>');
       }
     }, -1000);  //-1000 ms to compensate for the 1000 delay setInterval function
   }, 1000);

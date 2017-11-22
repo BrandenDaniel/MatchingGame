@@ -154,7 +154,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: none;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.5);
   display: none;
 }
 
@@ -162,6 +162,7 @@ body {
   font-family: 'Montserrat', Helvetica;
   margin-top: -.5em;
   text-align: center;
+  font-size: 3em;
 }
 
 .modal-content {
@@ -212,7 +213,6 @@ body {
   color: #edf252;
   margin-left: 2px;
 }
-
 
 @media (min-width: 650px) and (max-width: 725px) {
   .score-panel {
@@ -295,6 +295,14 @@ body {
     margin-left: -1em;
     font-size: 1.3em;
   }
+
+  .winner {
+    font-size: 2.5em;
+  }
+
+  .modal-content p {
+    margin-left: 34%;
+  }
 }
 
 
@@ -308,8 +316,12 @@ body {
     margin: 16.4em auto;
   }
 
+  .modal-content  {
+    margin: 15.3em auto;
+  }
+
   .closeBtn {
-      margin-left: 12em;
+      margin-left: 9.5em;
   }
 }
 
@@ -357,13 +369,13 @@ body {
   }
 
   .modal-content {
-    width: 250px;
-    margin: 13.3em auto;
-    padding: .8em 0;
+    width: 230px;
+    margin: 14em auto;
+    padding: .6em 0;
   }
 
   .closeBtn {
-    margin-left: 8.8em;
+    margin-left: 6.8em;
   }
 
   .winner {
@@ -372,6 +384,10 @@ body {
 
   .modal-content p {
     font-size: .85em;
+  }
+
+  .modal-restart {
+    font-size: 1em;
   }
 
 }
