@@ -152,7 +152,7 @@ function myTimer() {  //timer function
       if ($('.match').length === 16) {
         start = false;
         $('.modal').css('display', 'block');
-        $('.time').html('Timer: <b>' + timerDisplay + '</b>');
+        $('.time').html('Time: <b>' + timerDisplay + '</b>');
       }
     }, -1000);  //-1000 ms to compensate for the 1000 delay setInterval function
   }, 1000);
