@@ -45,6 +45,12 @@ $('.restart i, .modal-restart').on('click', function() {
   secs = 0;
   tick = 0;
 
+  rating = "";
+  rating += ' <i class="fa fa-star" aria-hidden="true"></i> ';
+  rating += ' <i class="fa fa-star" aria-hidden="true"></i> ';
+  rating += ' <i class="fa fa-star" aria-hidden="true"></i> ';
+  $stars.html(rating);
+
   $('.clock').html('0:00'); //timer display resets when restart button clicked
 
   $moves.html('Moves: ' + moves); //moves display resets when restart button clicked
