@@ -17,20 +17,19 @@ let $icon13 = $('<i class="fa fa-bicycle"></i>');
 let $icon14 = $('<i class="fa fa-bicycle"></i>');
 let $icon15 = $('<i class="fa fa-bomb"></i>');
 let $icon16 = $('<i class="fa fa-bomb"></i>');
-
-let array = [$icon1, $icon2, $icon3, $icon4, $icon5, $icon6, $icon7, $icon8, $icon9, $icon10, $icon11, $icon12, $icon13, $icon14, $icon15, $icon16];
-
 let openCards = []; //Array that hold current opened cards
 let clicks = 0;
 let moves = 0;
 let $moves = $('.moves');
 let $stars = $('.stars');
 let rating = "";
-let start = false;
+let start = false;  //timer does not start when page loads
 let mins = 0;
 let secs = 0;
 let tick = 0;
 let timerDisplay = "";
+let array = [$icon1, $icon2, $icon3, $icon4, $icon5, $icon6, $icon7, $icon8, $icon9, $icon10, $icon11, $icon12, $icon13, $icon14, $icon15, $icon16];
+
 
 loadCard(); //initial page with randomised cards
 myTimer();  //timer ready to start when any card is clicked
@@ -45,7 +44,7 @@ $('.restart i, .modal-restart').on('click', function() {
   secs = 0;
   tick = 0;
 
-  rating = "";
+  rating = "";  //ratings reset when restart button clicked
   rating += ' <i class="fa fa-star" aria-hidden="true"></i> ';
   rating += ' <i class="fa fa-star" aria-hidden="true"></i> ';
   rating += ' <i class="fa fa-star" aria-hidden="true"></i> ';
@@ -57,6 +56,8 @@ $('.restart i, .modal-restart').on('click', function() {
 
   $('.card').css('pointer-events', 'auto'); //cards clickability reenabled
 });
+
+
 
 $('.card').click(function() {
 
@@ -115,6 +116,8 @@ $('.card').click(function() {
   }
 });
 
+
+
 function loadCard() { //randomise cards in the deck function
   let newArray = shuffle(array);
   $('.deck li').empty();
@@ -122,6 +125,8 @@ function loadCard() { //randomise cards in the deck function
     $(this).append(newArray[index]);
   });
 }
+
+
 
 function shuffle(array) { //shuffles the icons array
   let currentIndex = array.length;
@@ -138,6 +143,8 @@ function shuffle(array) { //shuffles the icons array
 
   return array;
 }
+
+
 
 function myTimer() {  //timer function
   setInterval(function () {
@@ -168,6 +175,8 @@ function myTimer() {  //timer function
     }, -1000);  //-1000 ms to compensate for the 1000 delay setInterval function
   }, 1000);
 }
+
+
 
 function compareCards() { //comparing 2 cards from the openCards array
   if (openCards.length === 2) { //begin when there are 2 cards in OpenCards array

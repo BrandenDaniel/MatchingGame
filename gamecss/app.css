@@ -41,14 +41,14 @@ body {
 
 /*Style for timer*/
 .clock {
-  background: #85b3e5;
-  padding: .2em .2em .05em .2em;
+  background: #55a87f;
+  padding: 1px 1px 0px 1px;
   border-radius: 6px;
-  border: 1px solid #70a5e0;
-  width: 77px;
+  border-bottom: 2px solid #377255;
+  width: 60px;
   text-align: center;
   box-shadow: 0px 3px 10px 0 rgba(46, 61, 73, 0.5);
-
+  font-size: 1.25em;
 }
 
 /*Styles for the deck of cards*/
@@ -383,8 +383,8 @@ body {
 
   .clock {
     margin-bottom: 0;
-    font-size: .75em;
-    width: 62px;
+    font-size: .9em;
+    width: 45px;
   }
 
 }
