@@ -45,7 +45,7 @@ body {
   padding: .2em .2em .05em .2em;
   border-radius: 6px;
   border: 1px solid #70a5e0;
-  width: 75px;
+  width: 77px;
   text-align: center;
   box-shadow: 0px 3px 10px 0 rgba(46, 61, 73, 0.5);
 
@@ -169,7 +169,7 @@ body {
 
 .winner {
   font-family: 'Montserrat', Helvetica;
-  margin-top: -.5em;
+  margin-top: .1em;
   text-align: center;
   font-size: 3em;
   color: #2e3d49;
@@ -189,21 +189,6 @@ body {
 .modal-content p {
   margin-left: 35%;
   text-align: left;
-}
-
-.closeBtn {
-  margin-left: 11em;
-  font-size: 1.85em;
-  margin-top: -6em;
-  padding: .25em;
-  display: inline-block;
-  cursor: pointer;
-  color: #01637c;
-}
-
-.closeBtn:hover {
-  color: #003847;
-  transition: .3s;
 }
 
 .modal-restart {
@@ -329,10 +314,6 @@ body {
   .modal-content  {
     margin: 15.3em auto;
   }
-
-  .closeBtn {
-      margin-left: 9.5em;
-  }
 }
 
 @media (min-width: 0px) and (max-width: 429px) {
@@ -384,20 +365,20 @@ body {
     padding: .6em 0;
   }
 
-  .closeBtn {
-    margin-left: 6.8em;
-  }
-
   .winner {
     font-size: 1.65em;
+    margin-top: .4em;
   }
 
   .modal-content p {
     font-size: .85em;
+    margin-top: .5em;
+    margin-bottom:  .5em;
   }
 
   .modal-restart {
     font-size: 1em;
+    margin:
   }
 
   .clock {
