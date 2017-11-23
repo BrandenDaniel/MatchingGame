@@ -140,13 +140,15 @@ function myTimer() {  //timer function
       mins = Math.floor(tick / 60); //60 ticks will equate to 1 (1 minute)
       secs = tick % 60; //secs will increment up to 59 and then reset back to 0
 
-      if (secs < 10) {  //adding 0's (styling purposes)
+      timerDisplay = "";
+      if (secs < 10) {
         timerDisplay = "";
-        timerDisplay += '0' + mins + ':0' + secs;
-      } else if (mins < 10) {
+        timerDisplay += mins + ":" + "0" + secs;
+      } else {
         timerDisplay = "";
-        timerDisplay += '0' + mins + ':' + secs;
+        timerDisplay += mins + ":" + secs;
       }
+
 
       $('.clock').html(timerDisplay); //update timer while game is running every second
     }
