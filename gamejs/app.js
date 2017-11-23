@@ -45,7 +45,7 @@ $('.restart i, .modal-restart, .closeBtn').on('click', function () {
   secs = 0;
   tick = 0;
 
-  $('.output').html('00:00'); //timer display resets when restart button clicked
+  $('.clock').html('00:00'); //timer display resets when restart button clicked
 
   $moves.html('Moves: ' + moves); //moves display resets when restart button clicked
 
@@ -61,8 +61,11 @@ $('.card').click(function () {
   if (clicks < 2) {
     $('.card').css('pointer-events', 'auto'); //if user clicks less than twice, user is allowed to click once more
     $('.match').css('pointer-events', 'none'); //at this point, matched cards clickability will be disabled
+    $('.restart').css('pointer-events', 'none'); //disable restart button while first click in progress
   } else if (clicks > 1) {
     $('.card').css('pointer-events', 'none'); //if user clicked more than once, all cards will be disabled
+    $('.restart').css('pointer-events', 'auto'); //enable restart button after the first move is completed
+
     moves++;
     $moves.html('Moves: ' + moves); //update moves display during game
     setTimeout(function () {
@@ -145,7 +148,7 @@ function myTimer() {  //timer function
         timerDisplay += '0' + mins + ':' + secs;
       }
 
-      $('.output').html(timerDisplay); //update timer while game is running every second
+      $('.clock').html(timerDisplay); //update timer while game is running every second
     }
 
     setInterval(function () { //when all cards are guessed, the timer stops immediately
