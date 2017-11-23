@@ -92,7 +92,7 @@ body {
 
 .deck .card.open {
   transform: rotateY(0);
-  background: #07c1f4;
+  background: #1ebeea;
   cursor: default;
 }
 
