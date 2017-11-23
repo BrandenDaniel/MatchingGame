@@ -172,6 +172,7 @@ body {
   margin-top: -.5em;
   text-align: center;
   font-size: 3em;
+  color: #2e3d49;
 }
 
 .modal-content {
@@ -402,7 +403,7 @@ body {
   .clock {
     margin-bottom: 0;
     font-size: 1.1em;
-    width: 60px;
+    width: 62px;
   }
 
 }

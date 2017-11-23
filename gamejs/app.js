@@ -35,7 +35,7 @@ let timerDisplay = "";
 loadCard(); //initial page with randomised cards
 myTimer();  //timer ready to start when any card is clicked
 
-$('.restart i, .modal-restart, .closeBtn').on('click', function () {
+$('.restart i, .modal-restart, .closeBtn').on('click', function() {
   $('.modal').css('display', 'none'); //close modal when close button is clicked
   $('.card').removeClass('show open match');  //when restart button is clicked cards reset
   loadCard(); //when restart button is clicked, cards will randomise
@@ -52,7 +52,7 @@ $('.restart i, .modal-restart, .closeBtn').on('click', function () {
   $('.card').css('pointer-events', 'auto'); //cards clickability reenabled
 });
 
-$('.card').click(function () {
+$('.card').click(function() {
 
   start = true; //timer starts when any card is clicked
   $(this).addClass('open show'); //a card clicked will display
