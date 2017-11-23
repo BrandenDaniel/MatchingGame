@@ -45,7 +45,7 @@ $('.restart i, .modal-restart').on('click', function() {
   secs = 0;
   tick = 0;
 
-  $('.clock').html('00:00'); //timer display resets when restart button clicked
+  $('.clock').html('0:00'); //timer display resets when restart button clicked
 
   $moves.html('Moves: ' + moves); //moves display resets when restart button clicked
 
