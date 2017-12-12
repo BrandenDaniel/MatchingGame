@@ -34,7 +34,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 3em;
-  margin: 2.2em 1.425em 0em 1.425em;
+  margin: 1.4em 1.425em 0em 1.425em;
   text-align: center;
   color: #2e3d49;
 }
@@ -117,6 +117,11 @@ body {
   margin-left: 10em;
 }
 
+.star-moves {
+  display: inline-block;
+  width: 150px;
+}
+
 /*
  * Styles for the Score Panel
  */
@@ -178,9 +183,9 @@ body {
 .modal-content {
   text-align: center;
   width: 390px;
-  background-color: #3dc1e5;
+  background-color: #d6926d;
   background-image: url("../gameimg/cubes.png");
-  margin: 20.5em auto;
+  margin: 17em auto;
   padding: 1.5em 0;
   border-radius: 10px;
   box-shadow: 0 5px 20px 0 rgba(0,0,0, 0.2);
@@ -193,14 +198,14 @@ body {
 
 .modal-restart {
   cursor: pointer;
-  color: #01637c;
+  color: #444240;
   font-size: 1.4em;
   text-align: center;
   padding: .7em 0;
 }
 
 .modal-restart:hover {
-  color: #003847;
+  color: #2d2c2c;
   transition: .3s;
 }
 
@@ -258,6 +263,10 @@ body {
     font-size: 1.3em;
   }
 
+  .game-title {
+    font-size: 2.8em;
+  }
+
 }
 
 @media (min-width: 430px) and (max-width: 524px) {
@@ -308,11 +317,16 @@ body {
 
   .modal-content {
     width: 340px;
-    margin: 16.4em auto;
+    margin: 13.5em auto;
   }
 
-  .modal-content  {
-    margin: 15.3em auto;
+  .star-moves {
+    width: 155px;
+  }
+
+  .restart {
+    margin-left: 0;
+    font-size: 1.1em;
   }
 }
 
@@ -361,7 +375,7 @@ body {
 
   .modal-content {
     width: 230px;
-    margin: 14em auto;
+    margin: 11em auto;
     padding: .6em 0;
   }
 
@@ -385,6 +399,10 @@ body {
     margin-bottom: 0;
     font-size: .9em;
     width: 45px;
+  }
+
+  .star-moves {
+    width: 130px;
   }
 
 }
