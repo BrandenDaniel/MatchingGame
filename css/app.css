@@ -19,7 +19,7 @@ body {
 body {
   font-family: 'Coda', cursive;
   background-color: #8fd185;
-  background-image: url("../gameimg/batthern.png");
+  background-image: url("../img/batthern.png");
 }
 
 .container {
@@ -113,12 +113,12 @@ body {
 
 .restart i {
   display: inline-block;
-  margin-left: 10em;
+  margin-left: 9.5em;
 }
 
 .star-moves {
   display: inline-block;
-  width: 150px;
+  width: 155px;
 }
 
 /*
@@ -183,7 +183,7 @@ body {
   text-align: center;
   width: 390px;
   background-color: #d6926d;
-  background-image: url("../gameimg/cubes.png");
+  background-image: url("../img/cubes.png");
   margin: 17em auto;
   padding: 1.5em 0;
   border-radius: 10px;
